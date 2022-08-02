@@ -22,7 +22,7 @@
     margin-bottom: 13px;
   }
   &_count {
-    margin-bottom: 13px;
+    margin-bottom: 3px;
     color: #898989;
   }
   &_price {
@@ -65,11 +65,15 @@
       font-size: 16px;
     }
     &__item {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       font-weight: 500;
       font-size: 14px;
+      display: flex;
+      align-items: center;
       input {
         margin-right: 9px;
+        width: 18px;
+        height: 18px;
       }
     }
   }
