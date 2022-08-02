@@ -1,0 +1,89 @@
+@import '../../common';
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-radius: 4px 4px 0px 0px;
+  width: 100%;
+  p,
+  button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #1b1b1b;
+  }
+  &_item {
+    max-width: 242px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background: #ffffff;
+
+    @include phone() {
+      flex-direction: row;
+      max-width: unset;
+      border: 0;
+      padding: 0 20px 20px;
+      border-bottom: 1px solid #e6e6e6;
+      width: 100%;
+    }
+
+    &__wrapper {
+      @include phone() {
+      }
+    }
+
+    &__photo {
+      width: 242px;
+      height: 242px;
+      margin-bottom: 12px;
+      border-radius: 4px;
+      @include phone() {
+        width: 124px;
+        height: 124px;
+        margin: 0;
+        margin-right: 16px;
+      }
+    }
+
+    &__title {
+      text-align: left;
+      margin-left: 16px;
+      margin-bottom: 12px;
+      @include phone() {
+        margin-left: 0;
+        margin-bottom: 29px;
+      }
+    }
+
+    &__text {
+      display: flex;
+      padding: 0 16px;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      @include phone() {
+        padding: 0;
+        margin-bottom: 16px;
+      }
+    }
+    &__btn {
+      width: 106px;
+      height: 40px;
+      border: 1px solid #dbdbdb;
+      border-radius: 8px;
+      background-color: white;
+      margin-left: 16px;
+      margin-bottom: 16px;
+      &:hover {
+        cursor: pointer;
+      }
+      @include phone() {
+        margin: 0;
+      }
+    }
+  }
+}

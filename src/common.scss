@@ -1,0 +1,17 @@
+@mixin adaptive($max-width) {
+  @media screen and (max-width: #{$max-width}px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 834px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 550px) {
+    @content;
+  }
+}

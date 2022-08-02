@@ -1,0 +1,76 @@
+@import '../../common';
+.filter {
+  margin-right: 38px;
+
+  @include phone() {
+    margin: 0;
+    padding: 20px;
+  }
+
+  p,
+  input,
+  label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 140%;
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 32px;
+
+    margin-bottom: 13px;
+  }
+  &_count {
+    margin-bottom: 13px;
+    color: #898989;
+  }
+  &_price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    &__title {
+      font-weight: 700;
+      font-size: 16px;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    &__text {
+      display: flex;
+      input {
+        border: 1px solid #dbdbdb;
+        font-weight: 500;
+        font-size: 14px;
+        outline: none;
+        padding-left: 12px;
+        height: 42px;
+        width: 112px;
+        &:nth-child(1) {
+          border-radius: 4px 0px 0px 4px;
+          border-right: 0;
+        }
+        &:nth-child(2) {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+    }
+  }
+  &_brands {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__title {
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    &__item {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 14px;
+      input {
+        margin-right: 9px;
+      }
+    }
+  }
+}
