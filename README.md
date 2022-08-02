@@ -1,3 +1,8 @@
+Сделаны отображение фотоаппаратов, фильтрация по цене и бренду, добавление и удаление из корзины, отображение количества товаров
+задеплоино на [test-shihutin.netlify.app](https://test-shihutin.netlify.app/). По времени ушло 6-7 часов
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
